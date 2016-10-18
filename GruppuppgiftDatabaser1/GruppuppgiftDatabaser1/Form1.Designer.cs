@@ -28,76 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.lboCategories = new System.Windows.Forms.ListBox();
+            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.txtUnitPrice = new System.Windows.Forms.TextBox();
+            this.lboProducts = new System.Windows.Forms.ListBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.lblProductName = new System.Windows.Forms.Label();
+            this.lblUnitPrice = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(35, 483);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 52);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(35, 483);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(107, 52);
+            this.btnUpdate.TabIndex = 0;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lboCategories
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(400, 44);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(338, 516);
-            this.listBox1.TabIndex = 1;
+            this.lboCategories.FormattingEnabled = true;
+            this.lboCategories.ItemHeight = 16;
+            this.lboCategories.Location = new System.Drawing.Point(400, 44);
+            this.lboCategories.Name = "lboCategories";
+            this.lboCategories.Size = new System.Drawing.Size(338, 516);
+            this.lboCategories.TabIndex = 1;
             // 
-            // textBox1
+            // txtProductName
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 318);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtProductName.Location = new System.Drawing.Point(35, 318);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(340, 22);
+            this.txtProductName.TabIndex = 2;
             // 
-            // textBox2
+            // txtUnitPrice
             // 
-            this.textBox2.Location = new System.Drawing.Point(35, 387);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(340, 22);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtUnitPrice.Location = new System.Drawing.Point(35, 387);
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.Size = new System.Drawing.Size(340, 22);
+            this.txtUnitPrice.TabIndex = 3;
+            this.txtUnitPrice.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // listBox2
+            // lboProducts
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(781, 44);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(338, 516);
-            this.listBox2.TabIndex = 4;
+            this.lboProducts.FormattingEnabled = true;
+            this.lboProducts.ItemHeight = 16;
+            this.lboProducts.Location = new System.Drawing.Point(781, 44);
+            this.lboProducts.Name = "lboProducts";
+            this.lboProducts.Size = new System.Drawing.Size(338, 516);
+            this.lboProducts.TabIndex = 4;
             // 
-            // button2
+            // btnSave
             // 
-            this.button2.Location = new System.Drawing.Point(200, 483);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 52);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(200, 483);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(107, 52);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // lblProductName
+            // 
+            this.lblProductName.AutoSize = true;
+            this.lblProductName.Location = new System.Drawing.Point(32, 298);
+            this.lblProductName.Name = "lblProductName";
+            this.lblProductName.Size = new System.Drawing.Size(98, 17);
+            this.lblProductName.TabIndex = 6;
+            this.lblProductName.Text = "Product Name";
+            // 
+            // lblUnitPrice
+            // 
+            this.lblUnitPrice.AutoSize = true;
+            this.lblUnitPrice.Location = new System.Drawing.Point(32, 367);
+            this.lblUnitPrice.Name = "lblUnitPrice";
+            this.lblUnitPrice.Size = new System.Drawing.Size(69, 17);
+            this.lblUnitPrice.TabIndex = 7;
+            this.lblUnitPrice.Text = "Unit Price";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1187, 665);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblUnitPrice);
+            this.Controls.Add(this.lblProductName);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.lboProducts);
+            this.Controls.Add(this.txtUnitPrice);
+            this.Controls.Add(this.txtProductName);
+            this.Controls.Add(this.lboCategories);
+            this.Controls.Add(this.btnUpdate);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -107,12 +129,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.ListBox lboCategories;
+        private System.Windows.Forms.TextBox txtProductName;
+        private System.Windows.Forms.TextBox txtUnitPrice;
+        private System.Windows.Forms.ListBox lboProducts;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lblProductName;
+        private System.Windows.Forms.Label lblUnitPrice;
     }
 }
 
