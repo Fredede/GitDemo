@@ -121,7 +121,7 @@
             this.Controls.Add(this.lboCategories);
             this.Controls.Add(this.btnUpdate);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ADO.NET Assignment";
             this.ResumeLayout(false);
             this.PerformLayout();
 
